@@ -183,6 +183,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .wheel-container {
@@ -215,7 +216,7 @@ header h1 {
 
 .power-controls {
     position: absolute;
-    top: 65%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 20; /* Ensure it's above the wheel */
@@ -223,15 +224,13 @@ header h1 {
 
 .spin_button {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
     top: 50%;
     left: 50%;
-    /* transform: translate(-55%, 20%); */
     transform: translate(-50%, 50%);
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    /* transform: translate(-55%, 20%); */
 }
 
 
