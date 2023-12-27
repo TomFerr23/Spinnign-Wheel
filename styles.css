@@ -413,6 +413,15 @@ header h1 {
         padding: 10px; /* Reduce padding */
     }
 
+    .decor {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
     
 }
 
@@ -459,6 +468,15 @@ header h1 {
     .image-container {
         width: 80%; /* Increase width for single column layout */
         margin-bottom: 10px; /* Add margin between elements */
+    }
+
+    .decor {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
     }
 }
 
