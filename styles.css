@@ -344,7 +344,7 @@ header h1 {
 
 
 
-
+/* TABLTE STYLES */
 @media screen and (max-width: 768px) {
     .container {
         width: 95%;
@@ -362,7 +362,7 @@ header h1 {
 }
 
 
-
+/* BIG PHONES SCREENS */
 @media screen and (max-width: 549px) {
     .wheel-container {
         position: relative;
@@ -388,8 +388,30 @@ header h1 {
         cursor: pointer;
         /* transform: translate(-55%, 20%); */
     }
+
+    .title .container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .circle-text {
+        font-size: 24px; /* Smaller font size for big phone screens */
+    }
+
+    .timer-holder {
+        flex-direction: row; /* Keep in a row but adjust content */
+        justify-content: space-between; /* Space out the elements */
+        padding: 0 10px; /* Add padding on sides */
+    }
+
+    .image-container {
+        flex-basis: 30%; /* Adjust the size of each container */
+        padding: 10px; /* Reduce padding */
+    }
+
+    
 }
 
+/* SMALLER PHONE SCREENS */
 @media screen and (max-width: 349px) {
     .wheel-container {
         position: relative;
@@ -414,6 +436,24 @@ header h1 {
         height: 70px;
         cursor: pointer;
         /* transform: translate(-55%, 20%); */
+    }
+
+    .title .container {
+        padding: 5px; /* Even smaller padding for very small screens */
+    }
+
+    .circle-text {
+        font-size: 20px; /* Further reduce font size for smaller screens */
+    }
+
+    .timer-holder {
+        flex-direction: column; /* Stack elements vertically for very small screens */
+        align-items: center; /* Align items to the center */
+    }
+
+    .image-container {
+        width: 80%; /* Increase width for single column layout */
+        margin-bottom: 10px; /* Add margin between elements */
     }
 }
 
