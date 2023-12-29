@@ -532,6 +532,41 @@ header h1 {
     }
 }
 
+@media screen and (max-width: 470px) {
+    .popup-header h2:nth-child(2) {
+        color: #070707; 
+        font-size: 20px;
+    }
+    
+    .popup-header h2:nth-child(3) {
+        color: red;
+        font-size: 20px;
+    }
+    
+    
+    .popup-header h2, p, button {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .action-button {
+        border-radius: 5px; /* Rounded corners */
+        font-size: 16px; /* Slightly larger font size for readability */
+        font-weight: bold; /* Bold font for emphasis */
+        margin-top: 10px; /* Space above the button */
+        cursor: pointer; /* Cursor indicates clickable */
+        border: #032834 solid 1px;
+    }
+
+    .popup-content {
+        margin-bottom: 33px;
+    }
+}
+
+
+
+
 @media screen and (max-width: 402px) {
     .popup-header h2:nth-child(2) {
         color: #070707; 
@@ -562,10 +597,8 @@ header h1 {
     .popup-content {
         margin-bottom: 33px;
     }
-
-    
-
 }
+
 
 
 
