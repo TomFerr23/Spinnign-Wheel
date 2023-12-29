@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Olivier';
+    src: url('assets/font/olivier_demo.ttf') format('truetype');
+}
+
+
 html, body {
     overflow-x: hidden !important; /* Prevent horizontal scrolling */
     max-width: 100%; /* Ensure the maximum width does not exceed the viewport */
@@ -34,6 +40,8 @@ header h1 {
     margin: 0;
 }
 
+
+
 .hero {
     background-image: url('assets/Stake-Banners-BG-1920x1080 1.png');
     background-size: cover;
@@ -41,7 +49,7 @@ header h1 {
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
-    padding: 50px 0;
+    padding: 24px 0;
 }
 
 
@@ -191,7 +199,7 @@ header h1 {
 
 
 .wheel-section {
-    padding: 124px 0;
+    padding: 72px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,12 +271,12 @@ header h1 {
 
 .popup-header h2:nth-child(2) {
     color: #111111; 
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .popup-header h2:nth-child(3) {
     color: red;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 
@@ -285,6 +293,7 @@ header h1 {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 72px;
 }
 
 .popup-header {
@@ -358,7 +367,7 @@ header h1 {
 
 
 
-/* TABLTE STYLES */
+/* TABLET STYLES */
 @media screen and (max-width: 768px) {
     .container {
         width: 95%;
@@ -366,6 +375,23 @@ header h1 {
 
     .timer-holder {
         flex-direction: column;
+    }
+
+    .popup-header h2:nth-child(2) {
+        color: #070707; 
+        font-size: 32px;
+    }
+    
+    .popup-header h2:nth-child(3) {
+        color: red;
+        font-size: 32px;
+    }
+    
+    
+    .popup-header h2, p, button {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
     }
 }
 
@@ -431,6 +457,23 @@ header h1 {
         z-index: 0;
     }
 
+    .popup-header h2:nth-child(2) {
+        color: #070707; 
+        font-size: 24px;
+    }
+    
+    .popup-header h2:nth-child(3) {
+        color: red;
+        font-size: 24px;
+    }
+    
+    
+    .popup-header h2, p, button {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
     
 }
 
@@ -489,3 +532,96 @@ header h1 {
     }
 }
 
+@media screen and (max-width: 402px) {
+    .popup-header h2:nth-child(2) {
+        color: #070707; 
+        font-size: 20px;
+    }
+    
+    .popup-header h2:nth-child(3) {
+        color: red;
+        font-size: 20px;
+    }
+    
+    
+    .popup-header h2, p, button {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .action-button {
+        background-color: #57CDFF; /* Bright color for visibility */
+        color: #ffffff; /* White text for contrast */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 16px; /* Slightly larger font size for readability */
+        font-weight: bold; /* Bold font for emphasis */
+        margin-top: 10px; /* Space above the button */
+        cursor: pointer; /* Cursor indicates clickable */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        transition: background-color 0.3s; /* Smooth transition for interaction */
+    }
+
+    .action-button:hover {
+        background-color: #45B2E8; /* Slightly lighter color on hover */
+    }
+
+    .action-button:active {
+        background-color: #369ACD; /* Slightly darker color when pressed */
+    }
+
+    .popup-content {
+        margin-bottom: 33px;
+    }
+
+    
+
+}
+
+
+
+
+
+
+/* THIS IS TEST */
+/* For tablets */
+@media screen and (max-width: 768px) {
+    .title {
+        height: auto; /* Make height flexible */
+    }
+
+    .title .container {
+        border-radius: 30px; /* Slightly reduced border-radius */
+        /* Adjust width and padding if needed */
+    }
+
+    .circle-text {
+        font-size: smaller; /* Adjust font size for readability */
+        /* Adjust line-height if needed */
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+    .title {
+        height: 60px;/* Further adjustments for mobile */
+    }
+
+    .title .container {
+        border-radius: 20px; /* Even smaller border-radius */
+        display: flex; /* Keep the elements in a row */
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Align items to the center */
+        height: 60px;
+        justify-content: center;
+    }
+
+    .circle-text {
+        font-size: 20px; /* Smaller font size for mobile */
+        /* Further adjust line-height if needed */
+    }
+
+    .wheel-section {
+        padding: 24px 0;
+    }
+}
