@@ -13,6 +13,7 @@
 html, body {
     overflow-x: hidden !important; /* Prevent horizontal scrolling */
     max-width: 100%; /* Ensure the maximum width does not exceed the viewport */
+    background-color: #032834;
 }
 
 body {
