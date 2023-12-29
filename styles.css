@@ -165,39 +165,6 @@ header h1 {
     /* Styles for the centered content */
 }
 
-/* .the_wheel {
-    width: 600px; 
-    height: 600px; 
-    background-size: cover; 
-}
-
-.wheel-section {
-    padding: 124px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wheel-container {
-    position: relative;
-    width: 600px; 
-    height: 600px; 
-}
-
-
-
-.static-crown {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    width: 670px; 
-    height: 670px; 
-    background-size: cover;
-    background-position: center;
-    transform: translate(-50%, -50%); 
-    z-index: 10; 
-} */
-
 
 .wheel-section {
     padding: 72px 0;
@@ -257,6 +224,7 @@ header h1 {
 
 
 /* POP-UP SECTION */
+
 .popup {
     position: fixed;
     top: 0;
@@ -267,6 +235,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     z-index: 999999999999;
 }
 
@@ -321,6 +290,16 @@ header h1 {
     cursor: pointer;
 }
 
+.popup-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+
+
 .popup-comments {
     margin-top: 20px;
     background: #f0f2f5; /* Facebook comment section color */
@@ -338,11 +317,27 @@ header h1 {
 }
 
 
-.popup {
+/* .popup {
     background-image: url('assets/img-overlay-background.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+.popup-content {
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img-overlay-background.png');
+    /* background-size: contain; */
+    background-size: contain;
+    overflow: visible;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 72px;
 }
 
 
