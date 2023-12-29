@@ -279,7 +279,8 @@ header h1 {
 }
 
 .popup-content {
-    background: #e3f5ff;
+    /* background: #e3f5ff; */
+    background-color: transparent;
     padding: 20px;
     border-radius: 15px;
     display: flex;
@@ -290,7 +291,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FBC757;
+    /* background-color: #FBC757; */
+    background-color: transparent;
 }
 
 .popup-header .action-button {
@@ -325,6 +327,13 @@ header h1 {
     /* Additional styles to make it look like Facebook comments */
 }
 
+
+.popup {
+    background-image: url('assets/img-overlay-background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 
