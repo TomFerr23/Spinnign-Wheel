@@ -386,24 +386,53 @@ header h1 {
     overflow-y: auto;
 }
 
+/* .comments-content .item {
+    display: flex;
+    margin-bottom: 10px;
+} */
+
 .comments-content .item {
     display: flex;
+    align-items: flex-start; /* Aligns items to the start of the flex container */
     margin-bottom: 10px;
 }
 
-.avatar {
-    width: 40px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
+/* .avatar {
+    width: 40px; 
+    height: 40px; 
     background-color: #ccc;
     border-radius: 50%;
     margin-right: 10px;
+    background-image: url(assets/persona1.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+.avatar {
+    flex-shrink: 0; /* Prevents the avatar from shrinking */
+    flex-grow: 0; /* Prevents the avatar from growing */
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
 }
 
-.comment {
+/* .comment {
     flex-grow: 1;
     background-color: #f2f3f5;
     padding: 8px;
     border-radius: 18px;
+} */
+
+.comment {
+    flex-grow: 1; /* Allows the comment to grow to fill the remaining space */
+    background-color: #f2f3f5;
+    padding: 8px;
+    border-radius: 18px;
+    word-break: break-word; /* Ensures the text breaks to prevent horizontal overflow */
 }
 
 
